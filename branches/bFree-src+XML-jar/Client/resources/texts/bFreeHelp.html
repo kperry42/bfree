@@ -1,0 +1,298 @@
+<html>
+<style TYPE="text/css">
+ body, td {
+   font-family:Verdana,Arial,Helvetica;
+   font-size:12px;
+   margin:0px;
+   padding:0px;
+ }
+ 
+  .content {
+ 	margin-left:10px;
+	margin-right:10px;
+	line-height: 16px;
+ }
+ 
+ li {
+   font-family:Verdana,Arial,Helvetica;
+   font-size:12px;
+   line-height: 24px;
+   list-style-type:disc;
+  }
+ 
+ h2 {
+  text-decoration: none ;
+  color: #FFFFFF;
+  font-family:Verdana,Arial,Helvetica;
+  font-size:16px;
+  line-height:24px;
+  background-color:#6699CC;
+  padding:10px;
+ }
+
+ h3 {
+  text-decoration: none ;
+  color: #000000;
+  font-family:Verdana,Arial,Helvetica;
+  font-size:13px;
+  line-height:20px; 
+ }
+
+</style>
+<BODY BGCOLOR="#eeeeee">
+<center>
+<table width="750">
+  <tr>
+    <td><h2>The bFree  Application</h2>
+      <div class="content">The <b>bFree</b> application extracts the data and
+        organization from a Blackboard&#153;
+        
+        course "Export" (or "Archive") zip file, and creates either a web site
+        or a folder hierarchy with the extracted information. The web site
+        or the folders exhibit the same structure and names as the original Blackboard&#153; course.<BR>
+        <BR>
+        In addition, the web site uses a cascading style sheet that can be customized
+        to have an appearance and "branding" suitable for any organization or
+        person.<br>
+        <br>
+        <b>bFree</b> thus allows course authors to:
+        <ul>
+          <li>conveniently retrieve texts and other materials that might not
+            otherwise be available outside of Blackboard&#153;
+          <li>produce independent course web sites with the same content and
+            structure
+          <li>preview and extract individual files and other content
+          <li>easily share the course data or web site with others
+        </ul>
+      </div>
+      <h2>How to Export from Blackboard&#153;</h2>
+      <div class="content">Given that you have administrative privileges for
+        a course (and you do if you are the course's author), navigate into the
+        Blackboard&#153; course, then:
+        <ul>
+          <li>click on the "Control Panel" link (in the left-hand navigation
+            area) to open the Control Panel
+          <li>in the "Course Options" area of the Control Panel, click on "Export
+            Course"
+            
+            (or "Archive Course")
+          <li>on the "Export Course" (or "Archive Course") page, select the items
+            you would like to export (so that <b>bFree</b> can extract them)
+          <li>check the "Settings" box, which provides some basic course information
+          <li>then click the "Submit" button
+        </ul>
+        Another page appears, displaying a link to the Export (or Archive) zip
+        file; save this to your computer or other file system. Then click the "OK" button
+        on that page.
+        <br><br>
+        <b>We recommend that you keep your archive file</b> even after you have extracted
+        your content from it, so that you can reuse it to get improved results as we improve and extend
+        the accuracy and thoroughness of <b>bFree</b>.
+      </div>
+      <h2>Using bFree</h2>
+      <div class="content">When you open <b>bFree</b>, you will see two menus at the top,
+         a title and logo,
+         and a large tabbed display area. The display area is split into two areas;
+         it will be used to hold an outline of your Export (or Archive) zip file, and
+         previews of content items in that outline.<BR>
+        <h3>The Menus</h3>
+        The items in the <b>File</b> menu, and the actions produced by choosing them are:
+        <ul>
+          <li><b>Open an exported zip file ...</b> asks you to choose a Blackboard&#153;
+            archive or export zip file
+            from your computer or other file system; the content outline will then be
+            displayed.
+          <li><b>Hide non-content items</b> Some course section folders may contain no
+            data (or <b>bFree</b> does not handle the type of data yet); this choice takes
+            empty folders off the display. <b>Note:</b> You should hide
+            empty folders before extracting a web site, to avoid broken or empty links.
+          <li><b>Extract as files/folders ...</b> asks you to choose or make a folder,
+            then extracts the course content into that folder, creating a folder and file
+            hierarchy that parallels the organization of the original course.
+          <li><b>Extract as a web site ...</b> asks you to choose or make a folder,
+            then extracts the course content into that folder as a set of web
+            pages and files that parallel the organization of the original course. 
+            <b>Note:</b> To view your new web site,
+            open the "index.html" file in your browser.
+          <li><b>Extract the selection ...</b> asks you to choose a location and file name,
+            then extracts only the selected content item into that file.
+         <!--
+          <li><b>Obtain example templates ...</b> asks you to designate a location
+            at which a folder containing a set of the default templates will
+            be deposited; you can modify the templates, then use them to generate
+            a custom web site
+          <li><b>Create a custom web site ...</b> asks you to locate a set of
+            page templates, then designate a folder in which a customized web
+            site will be created from the course information
+         -->
+        </ul>
+        Also <b>note</b> that you can right-click on the outline and preview areas to see
+        pop-up menus with the same items.<br><br>
+        The items in the <b>Search</b> menu are discussed below, in the section titled
+        "The Search Feature".
+        <h3>The Display</h3>
+        After you open an Export (or Archive) zip file, its contents and organization
+        will be displayed as a standard hierarchy of folders, subfolders and
+        files in the large display area in the middle of the window.<BR>
+        <BR>
+        For each item in the hierarchy, there are entries in the table on the
+        right-hand side. The table columns are:
+        <ul>
+          <li><b>Type</b> tells what the entry represents within the actual Blackboard&#153; 
+            course:
+            <ul>
+              <li>"Course" is the overall course itself
+              <li>"Section" is a course section as listed in the main (left-hand)
+                navigation menu within the original course
+              <li>"Folder", "Website", "Assignment", "Staff", and so on, are any of the 
+                several content items within a section,
+                usually consisting of a title (also the item's title in this
+                display), a description, and perhaps an attachment
+              <li>"Course Uploads" and "Group Uploads" contain lists of uploaded files
+              <li>"Wiki" contains individual wiki pages and files uploaded to them
+              <li>"File" is any file attached to an item
+              <li>"Link" is a URL associated with an item
+            </UL>
+            With further development, there will be other types supported as
+            well.
+          <li><b>Extract?</b> when this box is checked, this item is designated
+            to be extracted
+          <li><b>Created</b> and <b>Updated</b> are dates, as indicated (this
+            information cannot always be established)
+        </ul>
+        Since <b>bFree</b> maintains the folder hierarchy when extracting content,
+        it insists on checking the "Extract?" boxes in the path from "Course" to
+        anything you choose to extract; this makes checking these boxes a little
+        odd:
+        <ul>
+          <li>unchecking or checking a box at a higher level automatically unchecks
+            or checks all its subordinates
+          <li>unchecking a lower-level box does not affect higher-level entries
+          <li>checking a lower-level box automatically checks the boxes in the
+            path up to the "Course" entry.
+        </ul>
+        There are five tabs on the display area. Each tab will display some combination
+        of the outline described above, plus other information:
+        <ul>
+         <li><b>Course Contents</b> combines the outline,
+            with a preview of the item currently selected in the outline
+         <li><b>Messages</b> shows the outline and a useful log of all processing messages,
+         including any errors that may occur
+         <li><b>Help</b> displays the outline and this help document
+         <li><b>Copyrights</b> gives the details of the copyrighted materials
+            contained in this application
+         <li><b>License</b> presents the distribution license for this application
+        </ul>
+        <h3>The Preview Area</h3>
+        The content preview area of the Course Contents tab in the display will do its best
+        to show you the content of any item that you have selected in the outline. You can
+        click on the outline items directly, or search for text in titles or descriptions,
+        or use the down- and up-arrows on your keyboard to step through the outline. The kinds
+        of things that can be previewed are:
+        <ul>
+         <li><b>Descriptions</b>: when the course, a section, or any other folder is selected,
+         its description, if available, is previewed. The description might be plain text
+         or HTML, and might include images.
+         <li><b>Images</b>: images that you have uploaded into Blackboard&#153; can be previewed.
+         <li>Other <b>files</b>: if you select a file that <b>bFree</b> cannnot itself preview
+            (such as a word processor file), you will be given a link to click
+            to open the required application to preview that file.
+         <li><b>Link</b>: a link to an external web page will display the actual page, just as a
+            browser would; however any links on that page will not be active (it's just a preview).
+        </ul>
+         <h3>The Search Feature</h3>
+         The search feature appears at the bottom of the window when the Course Contents
+         tab contains an outline. It lets you find items whose titles or descriptions contain 
+         text of interest to you. (Recall that Blackboard&#153; lets you enter a description
+         of any page in a course.)
+         The search feature has the following components:
+         <ul>
+            <li><b>Titles</b> and <b>Texts</b> (descriptions) checkboxes to tell where
+               to search
+            <li>a text field into which you can type text to find within titles and/or
+               descriptions
+            <li>the <b>1st</b> button finds the first title or description containing the text;
+               pressing Return or Enter in the text field has the same effect
+            <li>the <b>Next</b> button finds the next occurrence of the text
+            <li>the <b>Prev</b> button find the previous occurrence of the text
+            <li>the <b>Last</b> button finds the last occurrence of the text
+            <li>the <b>Tidy</b> checkbox, when selected, makes the search first collapse 
+               the display of the previous find, then finds (and expands) the next occurrence;
+               if unchecked, each occurrence is left expanded when the next is found
+         </ul>
+         The <b>Search</b> menu contains items for the search area buttons and checkboxes.
+         <h3>Disk Space Note</h3>
+         The <b>bFree</b> application unzips your selected export or archive file
+         into a temporary folder in your "home" directory when possible. If there is
+         not enough space there, or the home directory is locked, you are prompted
+         to choose another location. If you wish to force the application to use
+         a different location, restart the application, and hold down the Shift key
+         when clicking the Open button.<br><br>
+         The <b>bFree</b> application makes every effort to delete the temporary
+         folder before quitting. You can find the location of that folder in the Messages
+         tab. It is safe to delete it when <b>bFree</b> is not open.
+      </div>
+      <!-- for Version 2; needs changes and updates
+      <h2>Customizing the Templates</h2>
+      <div class="content">Any web site that <b>bFree</b> creates is generated
+        using a small set of simple HTML templates. Each template has the basic
+        HTML for a particular page layout, plus a keyword or two indicating where
+        content that is produced by <b>bFree</b> should be inserted. The keywords
+        are of the form
+        
+        "BflatUnzip$xxx$", and each different keyword refers to a different kind
+        of content. <BR>
+        <BR>
+        You may obtain a folder containing these page templates by clicking the
+        appropriate button in the <b>bFree</b> window. Then you can modify or
+        expand the pages to suit your needs or tastes, being sure to keep the
+        keywords where you would like the content to be inserted. <BR>
+        <BR>
+        The restrictions on your design, if you wish to generate the web pages
+        using your modified templates are:
+        <ul>
+          <li>the templates must keep the names as given
+          <li>all the templates must be present
+          <li>the "framesets" defined in the index page must remain
+          <li>a page accepts only the data indicated by the keyword(s) in the
+            example page
+        </ul>
+        Of course, you can extract the content once, then use it in any way you
+        please, rather than relying on the templates.<BR>
+        <br>
+      </div>
+      -->
+      <h2>Customizing the Web Pages</h2>
+      <div class="content">
+         The web site that <b>bFree</b> creates consists of:
+         <ul>
+            <li>a cascading style sheet file that is used by all pages
+            <li>an "images" folder for images used by the style sheet
+            <li>an index page customized for the course
+            <li>additional pages customized for the various sections and sub-sections of the course
+            <li>Folders named after some pages, containing files referenced by those pages
+         </ul>
+         You can modify the style sheet and images (being sure to leave the names
+         intact) to customize the look of the site.
+      </div>
+
+      <h2>System Requirements</h2>
+      <div class="content">
+         The <b>bFree</b> application is written in the Java programming language, and requires
+         that the latest Java software be installed on the computer.<br><br>
+         The latest Java software for your desktop computer can always be obtained at:<br><br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; http://java.com<br><br>
+         <b>bFree</b> has been tested successfully on Windows XP and Mac OS X, and has extracted
+         data successfully from Blackboard&#153; 6.3.and 7.0 archives.
+         <br><br>
+      </div>
+
+      <div class="content">
+        <hr>
+        <b>Note:</b> Blackboard&#153; is a trademark of Blackboard, Inc. <BR><BR>
+      </div></td>
+  </tr>
+</table>
+</center>
+</body>
+</html>
